@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới Anh Minh & Trúc Quỳnh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest': '#1a4325',
+                        'sage': '#84a58b',
+                        'gold': '#c5a059',
+                        'cream': '#fcfbf8'
+                    },
+                    fontFamily: {
+                        'names': ['"Great Vibes"', 'cursive'],
+                        'serif': ['"Cormorant Garamond"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-noise {
+            position: absolute;
+            inset: 0;
+            opacity: 0.25;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .delay-100 { animation-delay: 200ms; }
+        .delay-200 { animation-delay: 400ms; }
+        .delay-300 { animation-delay: 600ms; }
+        .delay-400 { animation-delay: 800ms; }
+        .delay-500 { animation-delay: 1000ms; }
+        .delay-600 { animation-delay: 1200ms; }
+    </style>
+</head>
+<body class="bg-[#15301c] min-h-screen flex items-center justify-center p-4 sm:p-8 relative overflow-x-hidden selection:bg-sage selection:text-white">
+    <!-- Nền Blur sang trọng -->
+    <div class="fixed top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-tr from-[#2d5a36] to-[#84a58b] opacity-20 blur-[120px] pointer-events-none"></div>
+    <div class="fixed bottom-[-20%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-bl from-[#1a4325] to-[#c5a059] opacity-15 blur-[120px] pointer-events-none"></div>
+
+    <!-- Khung Thiệp Chính -->
+    <div class="relative w-full max-w-3xl bg-cream rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] overflow-hidden text-center z-10 px-4 sm:px-10 py-16 sm:py-20 border border-sage/20">
+        <!-- Hoa văn viền bo góc -->
+        <div class="absolute inset-4 sm:inset-5 border-[1px] border-sage/40 rounded-3xl pointer-events-none"></div>
+        <div class="absolute inset-[22px] sm:inset-[26px] border-[1px] border-gold/30 rounded-[1.3rem] pointer-events-none"></div>
+        
+        <!-- Texture giấy cao cấp 4K -->
+        <div class="bg-noise"></div>
+
+        <div class="relative z-20 w-full flex flex-col items-center">
+            
+            <!-- Biểu tượng hoa lá -->
+            <div class="w-full flex justify-center mb-6 animate-fade-in-up">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21V11" stroke="#84a58b" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M12 11C9 11 6 8 6 5C9 5 12 8 12 11Z" fill="#84a58b" fill-opacity="0.2" stroke="#84a58b" stroke-width="1.2"/>
+                    <path d="M12 11C15 11 18 8 18 5C15 5 12 8 12 11Z" fill="#c5a059" fill-opacity="0.2" stroke="#c5a059" stroke-width="1.2"/>
+                    <path d="M12 15C10 15 8 13 8 11C10 11 12 13 12 15Z" fill="#84a58b" fill-opacity="0.2" stroke="#84a58b" stroke-width="1.2"/>
+                    <path d="M12 17C14 17 16 15 16 13C14 13 12 15 12 17Z" fill="#84a58b" fill-opacity="0.2" stroke="#84a58b" stroke-width="1.2"/>
+                </svg>
+            </div>
+
+            <!-- Tiêu đề -->
+            <p class="font-sans text-xs sm:text-sm text-sage uppercase tracking-[0.3em] font-medium mb-8 animate-fade-in-up">
+                Hành trình chung đôi
+            </p>
+
+            <!-- Tên Cô Dâu Chú Rể -->
+            <h1 class="font-names text-6xl sm:text-7xl lg:text-8xl text-forest mt-2 mb-2 animate-fade-in-up delay-100 drop-shadow-sm">
+                Anh Minh
+            </h1>
+            <div class="flex items-center justify-center gap-4 my-2 animate-fade-in-up delay-100">
+                <span class="w-12 h-[1px] bg-sage/40"></span>
+                <span class="font-names text-4xl sm:text-5xl text-gold">&</span>
+                <span class="w-12 h-[1px] bg-sage/40"></span>
+            </div>
+            <h1 class="font-names text-6xl sm:text-7xl lg:text-8xl text-forest mt-2 mb-10 animate-fade-in-up delay-100 drop-shadow-sm">
+                Trúc Quỳnh
+            </h1>
+
+            <!-- Timeline các sự kiện -->
+            <div class="relative w-full max-w-2xl mx-auto mt-6 sm:mt-10 py-4">
+                <!-- Trục thời gian ở giữa -->
+                <div class="absolute left-1/2 top-4 bottom-4 w-px border-l-[1.5px] border-dashed border-sage/40 transform -translate-x-1/2"></div>
+
+                <div class="flex flex-col gap-10 sm:gap-0">
+                    
+                    <!-- 1. Dạm Ngõ (Nằm bên Trái trên Desktop) -->
+                    <div class="relative flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full opacity-0 animate-fade-in-up delay-200 group">
+                        <!-- Desktop Text -->
+                        <div class="hidden sm:flex w-full sm:w-[42%] flex-col items-end justify-center text-right pr-6 transition-transform duration-500 group-hover:-translate-x-2">
+                            <h3 class="text-xl font-serif font-bold text-forest uppercase tracking-widest mb-1">Dạm Ngõ</h3>
+                            <div class="flex items-center justify-end gap-3 text-xs font-sans text-sage uppercase tracking-[0.2em] font-medium">
+                                <span class="w-8 h-[1px] bg-gold/70"></span>
+                                Thứ Bảy
+                            </div>
+                        </div>
+
+                        <!-- Khung Lịch -->
+                        <div class="w-full sm:w-[16%] flex justify-center z-10 relative">
+                            <div class="w-24 sm:w-28 bg-white rounded-xl shadow-[0_10px_30px_-10px_rgba(26,67,37,0.3)] border border-sage/20 overflow-hidden transform group-hover:scale-105 transition-all duration-500 ring-4 ring-cream">
+                                <div class="h-7 bg-forest flex items-center justify-center">
+                                    <span class="text-white text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase font-medium">Tháng 4</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center py-3 sm:py-4 bg-gradient-to-b from-white to-[#f4f7f5]">
+                                    <span class="text-4xl sm:text-5xl font-serif text-forest font-bold leading-none">25</span>
+                                </div>
+                                <div class="h-7 border-t border-sage/20 bg-sage/5 flex items-center justify-center">
+                                    <span class="text-[9px] sm:text-[10px] font-sans text-forest font-medium tracking-wider">ÂL: <span class="text-gold font-bold">09/03</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Text -->
+                        <div class="w-full sm:w-[42%] flex sm:hidden flex-col items-center justify-center text-center mt-3">
+                            <h3 class="text-lg font-serif font-bold text-forest uppercase tracking-widest mb-1">Dạm Ngõ</h3>
+                            <p class="text-[10px] font-sans text-sage uppercase tracking-[0.2em] font-medium">Thứ Bảy</p>
+                        </div>
+                        <div class="hidden sm:block w-[42%]"></div>
+                    </div>
+
+                    <!-- 2. Đám Hỏi (Nằm bên Phải trên Desktop) -->
+                    <div class="relative flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full sm:-mt-8 opacity-0 animate-fade-in-up delay-300 group">
+                        <div class="hidden sm:block w-[42%]"></div>
+
+                        <!-- Khung Lịch -->
+                        <div class="w-full sm:w-[16%] flex justify-center z-10 relative">
+                            <div class="w-24 sm:w-28 bg-white rounded-xl shadow-[0_10px_30px_-10px_rgba(26,67,37,0.3)] border border-sage/20 overflow-hidden transform group-hover:scale-105 transition-all duration-500 ring-4 ring-cream">
+                                <div class="h-7 bg-sage flex items-center justify-center">
+                                    <span class="text-white text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase font-medium">Tháng 7</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center py-3 sm:py-4 bg-gradient-to-b from-white to-[#f4f7f5]">
+                                    <span class="text-4xl sm:text-5xl font-serif text-forest font-bold leading-none">12</span>
+                                </div>
+                                <div class="h-7 border-t border-sage/20 bg-sage/5 flex items-center justify-center">
+                                    <span class="text-[9px] sm:text-[10px] font-sans text-forest font-medium tracking-wider">ÂL: <span class="text-gold font-bold">28/05</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desktop & Mobile Text -->
+                        <div class="w-full sm:w-[42%] flex flex-col items-center sm:items-start justify-center text-center sm:text-left mt-3 sm:mt-0 sm:pl-6 transition-transform duration-500 group-hover:translate-x-2">
+                            <h3 class="text-lg sm:text-xl font-serif font-bold text-forest uppercase tracking-widest mb-1">Đám Hỏi</h3>
+                            <div class="flex items-center justify-center sm:justify-start gap-3 text-[10px] sm:text-xs font-sans text-sage uppercase tracking-[0.2em] font-medium">
+                                Chủ Nhật
+                                <span class="hidden sm:block w-8 h-[1px] bg-gold/70"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Vu Quy (Nằm bên Trái trên Desktop) -->
+                    <div class="relative flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full sm:-mt-8 opacity-0 animate-fade-in-up delay-400 group">
+                        <!-- Desktop Text -->
+                        <div class="hidden sm:flex w-full sm:w-[42%] flex-col items-end justify-center text-right pr-6 transition-transform duration-500 group-hover:-translate-x-2">
+                            <h3 class="text-xl font-serif font-bold text-forest uppercase tracking-widest mb-1">Vu Quy</h3>
+                            <div class="flex items-center justify-end gap-3 text-xs font-sans text-sage uppercase tracking-[0.2em] font-medium">
+                                <span class="w-8 h-[1px] bg-gold/70"></span>
+                                Thứ Hai
+                            </div>
+                        </div>
+
+                        <!-- Khung Lịch -->
+                        <div class="w-full sm:w-[16%] flex justify-center z-10 relative">
+                            <div class="w-24 sm:w-28 bg-white rounded-xl shadow-[0_10px_30px_-10px_rgba(26,67,37,0.3)] border border-sage/20 overflow-hidden transform group-hover:scale-105 transition-all duration-500 ring-4 ring-cream">
+                                <div class="h-7 bg-forest flex items-center justify-center">
+                                    <span class="text-white text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase font-medium">Tháng 10</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center py-3 sm:py-4 bg-gradient-to-b from-white to-[#f4f7f5]">
+                                    <span class="text-4xl sm:text-5xl font-serif text-forest font-bold leading-none">26</span>
+                                </div>
+                                <div class="h-7 border-t border-sage/20 bg-sage/5 flex items-center justify-center">
+                                    <span class="text-[9px] sm:text-[10px] font-sans text-forest font-medium tracking-wider">ÂL: <span class="text-gold font-bold">17/09</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Text -->
+                        <div class="w-full sm:w-[42%] flex sm:hidden flex-col items-center justify-center text-center mt-3">
+                            <h3 class="text-lg font-serif font-bold text-forest uppercase tracking-widest mb-1">Vu Quy</h3>
+                            <p class="text-[10px] font-sans text-sage uppercase tracking-[0.2em] font-medium">Thứ Hai</p>
+                        </div>
+                        <div class="hidden sm:block w-[42%]"></div>
+                    </div>
+
+                    <!-- 4. Tân Hôn (Nằm bên Phải trên Desktop) -->
+                    <div class="relative flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full sm:-mt-8 opacity-0 animate-fade-in-up delay-500 group">
+                        <div class="hidden sm:block w-[42%]"></div>
+
+                        <!-- Khung Lịch -->
+                        <div class="w-full sm:w-[16%] flex justify-center z-10 relative">
+                            <div class="w-24 sm:w-28 bg-white rounded-xl shadow-[0_10px_30px_-10px_rgba(26,67,37,0.3)] border border-sage/20 overflow-hidden transform group-hover:scale-105 transition-all duration-500 ring-4 ring-cream">
+                                <div class="h-7 bg-sage flex items-center justify-center">
+                                    <span class="text-white text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase font-medium">Tháng 10</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center py-3 sm:py-4 bg-gradient-to-b from-white to-[#f4f7f5]">
+                                    <span class="text-4xl sm:text-5xl font-serif text-forest font-bold leading-none">27</span>
+                                </div>
+                                <div class="h-7 border-t border-sage/20 bg-sage/5 flex items-center justify-center">
+                                    <span class="text-[9px] sm:text-[10px] font-sans text-forest font-medium tracking-wider">ÂL: <span class="text-gold font-bold">18/09</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desktop & Mobile Text -->
+                        <div class="w-full sm:w-[42%] flex flex-col items-center sm:items-start justify-center text-center sm:text-left mt-3 sm:mt-0 sm:pl-6 transition-transform duration-500 group-hover:translate-x-2">
+                            <h3 class="text-lg sm:text-xl font-serif font-bold text-forest uppercase tracking-widest mb-1">Tân Hôn</h3>
+                            <div class="flex items-center justify-center sm:justify-start gap-3 text-[10px] sm:text-xs font-sans text-sage uppercase tracking-[0.2em] font-medium">
+                                Thứ Ba
+                                <span class="hidden sm:block w-8 h-[1px] bg-gold/70"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="mt-12 sm:mt-16 mb-2 animate-fade-in-up delay-600 flex flex-col items-center">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#c5a059" stroke-width="1.5" class="mb-3 opacity-60">
+                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#c5a059" fill-opacity="0.1"/>
+                </svg>
+                <p class="font-sans text-[10px] sm:text-xs text-sage uppercase tracking-[0.3em] font-medium">Trân trọng kính báo</p>
+                <p class="font-serif text-forest text-lg mt-2 italic tracking-wide">Năm Bính Ngọ • 2026</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
